@@ -18,6 +18,7 @@
 body {
 	background-color: var(--bg-color);
 	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 *:link {
@@ -33,9 +34,10 @@ header {
 	display: flex;
 	position: sticky;
 	/* width: 96.6%; */
-	width: 96.6vw;
+	width: 95.7vw;
 	background-color: var(--header-color);
 	padding: 2em;
+	top: 0px;
 }
 
 nav {
@@ -62,7 +64,6 @@ main {
 	text-align: center;
 }
 
-
 #attention {
 	display: flex;
 	flex-direction: row;
@@ -81,10 +82,12 @@ table {
 table, th, td {
 	border-style: solid;
 	border-collapse: collapse;
+	min-width: 3em;
+	max-width: 30vw;
 }
 
 #game button img {
-	height: 40vh;
+	width: 20vw;
 }
 
 #game button {
@@ -123,4 +126,13 @@ footer {
 
 footer span {
 	margin: auto;
+}
+
+.merch-container {
+	margin: 0px;
+}
+
+.merch-container img {
+	height: 40vh;
+	width: auto;
 }

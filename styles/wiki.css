@@ -1,0 +1,27 @@
+ol a:link {
+	text-align: left;
+	color: var(--etc-color);
+	text-decoration: none;
+}
+
+ol a:visited {
+	text-align: left;
+	color: var(--etc-color);
+}
+
+.contents {
+	text-align: left;
+}
+
+.faq-container {
+	text-align: left;
+	align-items: left;
+}
+
+main #faq h3 {
+	padding-left: 4em;
+}
+
+main #faq {
+	text-align: center;
+}
