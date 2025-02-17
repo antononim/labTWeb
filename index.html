@@ -3,30 +3,68 @@
 <head>
 	<title>Pineapple clicker</title>
 	<meta charset="utf-8">
-	<link rel="icon", type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="styles/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Game</a>
-				</li>
-				<li>
-					<a href="pages/about.html">About Creator</a>
-				</li>
-				<li>
-					<a href="pages/merch.html">Merch</a>
-				</li>
-				<li>
-					<a href="pages/wiki.html">Wiki</a>
-				</li>
-			</ul>
+			<a href="index.html">Game</a>
+			<a href="pages/about.html">About Creator</a>
+			<a href="pages/merch.html">Merch</a>
+			<a href="pages/wiki.html">Wiki</a>
 		</nav>
 	</header>
 
 	<main>
+		<div id="attention">
+			<div id="stats">
+				<table>
+					<tr>
+						<th>Clicks per second:</th> <td id="cps">0</td>
+					</tr>
+					<tr>
+						<th>Pineapples per second: </th> <td id="pps">0</td>
+					</tr>
+					<tr>
+						<th>Pineapples per click: </th> <td id="ppc">0</td>
+					</tr>
+				</table>
+			</div>
+			<br><hr><br>
+			<div id="game">
+				<h1>Start clicking now!</h1>
+				<label>Clicks: </label><span>0</span>
+				<br><br>
+				<button><img src="images/pineappleButton.png"></button>
+			</div>
+			<br><hr><br>
+			<div id="upgrades">
+				<table>
+					<tr>
+						<th> Mouse upgrades: </th>
+						<td> More pineapples with click. </td>
+						<td> Increase button size. </td>
+						<td> More clicks per pineapple. </td>
+					</tr>
+					<tr>
+						<th> Auto upgrades: </th>
+						<td> Grannies. </td>
+						<td> Goddamn. </td>
+						<td> Pineapple trees. </td>
+					</tr>
+					<tr>
+						<th> Passive abilities: </th>
+						<td> Crit chance. </td>
+						<td> Golden Pineapple. </td>
+						<td> Offline income. </td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br><hr><br>
 		<div id="faq">
 			<h3>FAQ:</h3>
 			<ul>
@@ -42,38 +80,7 @@
 				</li>
 			</ul>
 		</div>
-		<br><hr><br>
-		<div id="game">
-			<h1>Start clicking now!</h1>
-			<label>Clicks: </label><span>0</span>
-			<br>
-			<button><img src="images/smile.png" width="10%"></button>
-		</div>
-		<br><hr><br>
-		<div id="upgrades">
-			<table>
-				<tr>
-					<th> Mouse upgrades: </th>
-					<td> More pineapples with click. </td>
-					<td> Increase button size. </td>
-					<td> More clicks per pineapple. </td>
-				</tr>
-				<tr>
-					<th> Auto upgrades: </th>
-					<td> Grannies. </td>
-					<td> Goddamn. </td>
-					<td> Pineapple trees. </td>
-				</tr>
-				<tr>
-					<th> Passive abilities: </th>
-					<td> Crit chance. </td>
-					<td> Golden Pineapple. </td>
-					<td> Offline income. </td>
-				</tr>
-			</table>
-		</div>
 	</main>
-	<br><hr><br>
 	<footer>
 		<span>Copyright CR-233, 2025</span>
 	</footer>
