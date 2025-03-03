@@ -1,0 +1,33 @@
+#upgrades {
+	width: 29%;
+}
+
+main #faq h3 {
+	padding-left: 4em;
+}
+
+main #faq {
+	text-align: left;
+}
+
+#game button img {
+	width: 20vw;
+}
+
+#game button {
+	background-color: white;
+	border-style: solid;
+	border-width: 6px;
+	border-color: var(--header-color);
+}
+
+#game button:active {
+	/* border-color: var(--accent-color); */
+	border-bottom-color: var(--accent-color);
+	border-top-color: var(--accent-color);
+}
+
+#stats, #game {
+	width: 29%;
+}
+

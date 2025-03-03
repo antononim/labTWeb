@@ -65,18 +65,18 @@ main {
 }
 
 #attention {
-	display: flex;
+	/* display: flex; */
 	flex-direction: row;
-	margin: auto;
+	/* margin: auto 40% auto 40%; */
 	padding-bottom: 10vh;
 }
 
-#stats, #game {
-	width: 29%;
+#attention div {
+	margin: auto;
 }
 
 table {
-	margin: 10vh auto auto auto;
+	margin: auto auto auto auto;
 }
 
 table, th, td {
@@ -84,31 +84,6 @@ table, th, td {
 	border-collapse: collapse;
 	min-width: 3em;
 	max-width: 30vw;
-}
-
-#game button img {
-	width: 20vw;
-}
-
-#game button {
-	background-color: white;
-	border-style: solid;
-	border-width: 6px;
-	border-color: var(--header-color);
-}
-
-#game button:active {
-	/* border-color: var(--accent-color); */
-	border-bottom-color: var(--accent-color);
-	border-top-color: var(--accent-color);
-}
-
-main #faq h3 {
-	padding-left: 4em;
-}
-
-main #faq {
-	text-align: left;
 }
 
 footer {
@@ -126,13 +101,4 @@ footer {
 
 footer span {
 	margin: auto;
-}
-
-.merch-container {
-	margin: 0px;
-}
-
-.merch-container img {
-	height: 40vh;
-	width: auto;
 }

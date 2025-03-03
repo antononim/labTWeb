@@ -5,10 +5,11 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/game.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body onload="init()">
 	<header>
 		<nav>
 			<a href="index.html">Game</a>
@@ -20,46 +21,28 @@
 
 	<main>
 		<div id="attention">
-			<div id="stats">
-				<table>
-					<tr>
-						<th>Clicks per second:</th> <td id="cps">0</td>
-					</tr>
-					<tr>
-						<th>Pineapples per second: </th> <td id="pps">0</td>
-					</tr>
-					<tr>
-						<th>Pineapples per click: </th> <td id="ppc">0</td>
-					</tr>
-				</table>
-			</div>
 			<br><hr><br>
 			<div id="game">
 				<h1>Start clicking now!</h1>
-				<label>Clicks: </label><span>0</span>
+				<label>Pineapples: </label><span id="pineappleCounter">0</span>
 				<br><br>
-				<button><img src="images/pineappleButton.png"></button>
+				<button id="clickbtn"><img src="images/pineappleButton.png"></button>
 			</div>
 			<br><hr><br>
 			<div id="upgrades">
+				<h4>Upgrades:</h4>
 				<table>
 					<tr>
-						<th> Mouse upgrades: </th>
-						<td> More pineapples with click. </td>
-						<td> Increase button size. </td>
-						<td> More clicks per pineapple. </td>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Amount</th>
+						<th>Cost</th>
 					</tr>
 					<tr>
-						<th> Auto upgrades: </th>
-						<td> Grannies. </td>
-						<td> Goddamn. </td>
-						<td> Pineapple trees. </td>
-					</tr>
-					<tr>
-						<th> Passive abilities: </th>
-						<td> Crit chance. </td>
-						<td> Golden Pineapple. </td>
-						<td> Offline income. </td>
+						<td><button onclick="buyUpgrade('ppc')"> More pineapples with click. </button></th>
+						<td>asd</td>
+						<td id="ppcCount">0</td>
+						<td id="ppcPrice">100</td>
 					</tr>
 				</table>
 			</div>
@@ -84,5 +67,6 @@
 	<footer>
 		<span>Copyright CR-233, 2025</span>
 	</footer>
+	<script src="js/game.js"></script>
 </body>
 </html>
