@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="../favicon.png">
 	<link rel="stylesheet" href="../styles/styles.css">
-	<link rel="stylesheet" href="../styles/about.css">
+	<link rel="stylesheet" href="../styles/login.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -21,22 +21,23 @@
 	</header>
 
 	<main>
-		<span>
-		<b>Greetings.</b>
-		<br>
-		Thank you for visiting this page!
-		<br>
-		There isn't a lot I can tell about myself. 
-		<br>
-		My name is Anton Scrinic, I'm from group CR-233, I study at UTM.
-		<br>
-		There is nothing that can make my life even happier.
-		<br>
-		Have a nice day!
-		</span>
+		<form action="login.php", method="post">
+			<table>
+				<tr>
+					<td><label>Your nickname:</label></td>
+					<td><input type="text" title="Nickname" name="nickname"/></td>
+				</tr>
+				<tr>
+					<td><label>Your password:</label></td>
+					<td><input type="password" title="Password" name="password"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="Login"></td>
+				</tr>
+			</table>
+		</form>
 	</main>
-	<br>
-	<hr>	
+	<br>	
 	<footer>
 		<span>Copyright CR-233, 2025</span>
 	</footer>

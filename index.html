@@ -16,6 +16,7 @@
 			<a href="pages/about.html">About Creator</a>
 			<a href="pages/merch.html">Merch</a>
 			<a href="pages/wiki.html">Wiki</a>
+			<a href="pages/login.html">Login</a>
 		</nav>
 	</header>
 
@@ -39,10 +40,16 @@
 						<th>Cost</th>
 					</tr>
 					<tr>
-						<td><button onclick="buyUpgrade('ppc')"> More pineapples with click. </button></th>
-						<td>asd</td>
+						<td><button class="upgradeButton" onclick="buyUpgrade('ppc')"> PPC. </button></th>
+						<td>Pineapples per click: grants more pineapples for your every click.</td>
 						<td id="ppcCount">0</td>
 						<td id="ppcPrice">100</td>
+					</tr>
+					<tr>
+						<td><button class="upgradeButton" onclick="buyUpgrade('pps')"> PPS. </button></th>
+						<td>More pineapples every second.</td>
+						<td id="ppsCount">0</td>
+						<td id="ppsPrice">100</td>
 					</tr>
 				</table>
 			</div>

@@ -22,12 +22,19 @@ main #faq {
 }
 
 #game button:active {
-	/* border-color: var(--accent-color); */
 	border-bottom-color: var(--accent-color);
 	border-top-color: var(--accent-color);
 }
 
 #stats, #game {
 	width: 29%;
+}
+
+.upgradeButton {
+	background-color: var(--accent-color);
+	border: 1px solid var(--header-color);
+	border-radius: 20%;
+	min-width: 4vw;
+	min-height: 4vh;
 }
 

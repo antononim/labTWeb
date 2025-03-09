@@ -34,7 +34,7 @@ header {
 	display: flex;
 	position: sticky;
 	/* width: 96.6%; */
-	width: 95.7vw;
+	width: 95.5vw;
 	background-color: var(--header-color);
 	padding: 2em;
 	top: 0px;

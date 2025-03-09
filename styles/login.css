@@ -1,0 +1,17 @@
+form table, form th, form td {
+	border-width: 0px;
+	border-style: none;
+}
+
+form table label {
+	margin: 2vh auto;
+	text-align: center;
+	display: inline-block;
+}
+
+input[type='submit'] {
+	border-style: solid;
+	border-color: var(--header-color);
+	background-color: var(--accent-color);
+	border-radius: 30%;	
+}
