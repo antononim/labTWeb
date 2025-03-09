@@ -9,11 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body onload="setVersion()">
 	<header>
 		<nav>
 			<a href="../index.html">Game</a>
-			<a href="about.html">About Creator</a>
+			<a href="about.html">About</a>
 			<a href="merch.html">Merch</a>
 			<a href="wiki.html">Wiki</a>
 			<a href="login.html">Login</a>
@@ -34,11 +34,16 @@
 		<br>
 		Have a nice day!
 		</span>
+		<br><br>
+		<span>
+			Current version: <label id="version">0.0.0</label>
+		</span>
 	</main>
 	<br>
 	<hr>	
 	<footer>
 		<span>Copyright CR-233, 2025</span>
 	</footer>
+	<script src="../js/about.js"></script>
 </body>
 </html>
