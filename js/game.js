@@ -21,6 +21,7 @@ function init() {
 	countElements['pineappleCount'] = document.querySelector("#pineappleCounter");
 	countElements['ppcCount'] = document.querySelector("#ppcCount");
 	countElements['ppsCount'] = document.querySelector("#ppsCount");
+	document.querySelector("#saveBtn").addEventListener("click", saveGlobally);
 
 	setInterval(update, 200);
 	setInterval(autoclick, 1000);
@@ -60,12 +61,29 @@ function update() {
 }
 
 function saveLocally() {
+	localStorage['pineapples'] = Number(userStats.pineapples);
 	localStorage['ppc'] = Number(userStats.ppc);
 	localStorage['pps'] = Number(userStats.pps);
 }
 
 function saveGlobally() {
-	
+	if ( !('username' in localStorage) ) {
+		return;
+	}
+
+	let req = new XMLHttpRequest();
+	req.open("POST", "/phpscripts/save.php", true);
+	req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	req.send( "username=" + localStorage['username'] + "&password=" + localStorage['password'] + "&pineapples=" + userStats.pineapples + "&ppc=" + userStats.ppc + "&pps=" + userStats.pps);
+
+	let saveModal = document.querySelector("#modal");
+	saveModal.hidden = false;
+	saveModal.classList.remove("fade-out");
+	saveModal.classList.add("fade-in");
+	setTimeout(()=>{
+		document.querySelector("#modal").classList.remove("fade-in");
+		document.querySelector("#modal").classList.add("fade-out");
+	}, 2000);
 }
 
 function closing() {

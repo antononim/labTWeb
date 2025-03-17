@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -15,7 +19,11 @@
 		<div id="attention">
 			<br><hr><br>
 			<div id="game">
-				<h1>Start clicking now!</h1>
+				<h1>
+				Start clicking now<?php 
+					if (!empty($_SESSION['username'])) echo ", ". $_SESSION['username'];
+				?>!
+				</h1>
 				<label>Pineapples: </label><span id="pineappleCounter">0</span>
 				<br><br>
 				<button id="clickbtn"><img src="images/pineappleButton.png"></button>
@@ -43,6 +51,8 @@
 						<td id="ppsPrice">100</td>
 					</tr>
 				</table>
+				<br>
+				<button class="upgradeButton" id="saveBtn">Save progress.</button>
 			</div>
 		</div>
 		<br><hr><br>
@@ -63,6 +73,9 @@
 		</div>
 	</main>
 	<?php require("components/footer.php"); ?>
+	<div id="modal" hidden="true">
+		<p>Game is saved!</p>
+	</div>
 	<script src="js/game.js"></script>
 </body>
 </html>

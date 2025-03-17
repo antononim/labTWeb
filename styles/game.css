@@ -38,3 +38,52 @@ main #faq {
 	min-height: 4vh;
 }
 
+.upgradeButton:active {
+	background-color: var(--header-color);
+}
+
+#modal {
+	position: fixed;
+	bottom: 50px;
+	left: 20px;
+	border-style: solid;
+	border-color: var(--header-color);
+	background-color: var(--bg-color);
+	font-family: "Comic Sans MS";
+	padding: 10px 30px;
+	font-size: medium;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-out {
+	opacity: 0;
+	animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

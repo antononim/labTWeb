@@ -1,19 +1,32 @@
 
+let loginBtn, signupBtn, loginForm, signupForm
 
 function login() {
-
+	loginForm.hidden = false;
+	signupForm.hidden = true;
 }
 
 function signup() {
-
+	loginForm.hidden = true;
+	signupForm.hidden = false;
 }
 
 function init() {
-	let loginBtn = document.getElementById("loginBtn");
-	let signupBtn = document.getElementById("signupBtn");
+	loginForm = document.getElementById("loginform");
+	signupForm = document.getElementById("signupform");
+	pineapplesInput = document.getElementById("pineapplesInput");
+	pineapplesInput.hidden = true;
+	pineapplesInput.value = localStorage['pineapples'];
+	ppcInput = document.getElementById("ppcInput");
+	ppcInput.hidden = true;
+	ppcInput.value = localStorage['ppc'];
+	ppsInput = document.getElementById("ppsInput");
+	ppsInput.hidden = true;
+	ppsInput.value = localStorage['pps'];
 
-	loginBtn.addEventListener("click", login);
-	signupBtn.addEventListener("click", signup);
+	signupForm.hidden = true;
+	// loginForm.hidden = true;
+
 
 }
 

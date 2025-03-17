@@ -15,3 +15,7 @@ input[type='submit'] {
 	background-color: var(--accent-color);
 	border-radius: 30%;
 }
+
+form a:link, form a:visited {
+	color: var(--etc-color);
+}
