@@ -10,15 +10,8 @@
 </head>
 
 <body onload="setVersion()">
-	<header>
-		<nav>
-			<a href="../index.html">Game</a>
-			<a href="about.html">About</a>
-			<a href="merch.html">Merch</a>
-			<a href="wiki.html">Wiki</a>
-			<a href="login.html">Login</a>
-		</nav>
-	</header>
+
+	<?php require("../components/header.php"); ?>
 
 	<main>
 		<span>
@@ -41,9 +34,7 @@
 	</main>
 	<br>
 	<hr>	
-	<footer>
-		<span>Copyright CR-233, 2025</span>
-	</footer>
+	<?php require("../components/footer.php"); ?>
 	<script src="../js/about.js"></script>
 </body>
 </html>

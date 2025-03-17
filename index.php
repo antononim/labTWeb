@@ -10,16 +10,7 @@
 </head>
 
 <body onload="init()">
-	<header>
-		<nav>
-			<a href="index.html">Game</a>
-			<a href="pages/about.html">About</a>
-			<a href="pages/merch.html">Merch</a>
-			<a href="pages/wiki.html">Wiki</a>
-			<a href="pages/login.html">Login</a>
-		</nav>
-	</header>
-
+	<?php require("components/header.php"); ?>
 	<main>
 		<div id="attention">
 			<br><hr><br>
@@ -71,9 +62,7 @@
 			</ul>
 		</div>
 	</main>
-	<footer>
-		<span>Copyright CR-233, 2025</span>
-	</footer>
+	<?php require("components/footer.php"); ?>
 	<script src="js/game.js"></script>
 </body>
 </html>

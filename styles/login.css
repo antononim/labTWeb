@@ -1,4 +1,4 @@
-form table, form th, form td {
+form table, form th, form td, form tbody {
 	border-width: 0px;
 	border-style: none;
 }
@@ -13,5 +13,5 @@ input[type='submit'] {
 	border-style: solid;
 	border-color: var(--header-color);
 	background-color: var(--accent-color);
-	border-radius: 30%;	
+	border-radius: 30%;
 }

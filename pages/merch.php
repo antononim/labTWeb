@@ -10,15 +10,7 @@
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="../index.html">Game</a>
-			<a href="about.html">About</a>
-			<a href="merch.html">Merch</a>
-			<a href="wiki.html">Wiki</a>
-			<a href="login.html">Login</a>
-		</nav>
-	</header>
+<?php require("../components/header.php"); ?>
 
 	<main>
 		<div class="merch-container">
@@ -60,9 +52,6 @@
 	</main>
 
 	<hr>	
-	<footer>
-		<span>Legal disclaimer: non of the showed products are currently available for purchase, thus there is no "buy" button.</span>
-		<span>Copyright CR-233, 2025</span>
-	</footer>
+	<?php require("../components/footer.php"); ?>
 </body>
 </html>
