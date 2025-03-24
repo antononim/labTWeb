@@ -12,7 +12,7 @@ session_start();
 	<link rel="stylesheet" href="styles/game.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-
+ 
 <body onload="init()">
 	<?php require("components/header.php"); ?>
 	<main>
