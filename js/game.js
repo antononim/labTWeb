@@ -21,7 +21,7 @@ function init() {
 	countElements['pineappleCount'] = document.querySelector("#pineappleCounter");
 	countElements['ppcCount'] = document.querySelector("#ppcCount");
 	countElements['ppsCount'] = document.querySelector("#ppsCount");
-	document.querySelector("#saveBtn").addEventListener("click", saveGlobally);
+	document.querySelector("#saveBtn").addEventListener("click", closing);
 
 	setInterval(update, 200);
 	setInterval(autoclick, 1000);
